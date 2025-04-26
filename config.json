@@ -6,5 +6,10 @@
     "chunk_size": 8192,
     "record_seconds": 5,
     "device_index": 0
-  }
+  },
+   "network": {
+        "timeout": 10,
+        "retry_count": 5,
+        "retry_delay": 2
+    }
 }
