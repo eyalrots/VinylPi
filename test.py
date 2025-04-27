@@ -11,7 +11,7 @@ import requests
 from shazamio import Shazam
 
 # Now that we have the right libraries, we can go ahead and write the code that will
-# aventually record the audio toa WAV file.
+# eventually record the audio toa WAV file.
 
 # Set enviroment variable for ALSA - Advances Linux Sound Architecture
 os.environ['PA_ALSA_PLUGHW'] = '1'   # tells ALSA to use audio card 0 (my mic)
@@ -21,7 +21,7 @@ def load_config():
     with open('./config.json', 'r') as config_file:
         return json.load(config_file)
     
-# Set config using the funcion:
+# Set config using the function:
 config = load_config()
 
 # List audio devices - for later use
@@ -43,7 +43,7 @@ def select_input_device():
         print("No audio devices found.")
         return None
     suitable_devices = [i for i, name, channels in devices if channels >= config['audio']['channels']]
-    if suitable_cevices:
+    if suitable_devices:
         return suitable_devices[0]
     else:
         print("No suitable input devices found with  the required number of channels.")
