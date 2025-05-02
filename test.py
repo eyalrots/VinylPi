@@ -121,6 +121,8 @@ async def update_song_information():
     print("attempting to record song...")
     wav_file = record_audio()
     if wav_file is not None:
+        print("recorded song successfully!")
+        print("attempting to recognmize song...")
         result = await recognize_song(wav_file)
         if result:
             print_info(result)
