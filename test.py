@@ -1,5 +1,8 @@
 # The goal: record audio with this script
 
+# Hello there, I added this remotly from the PC :)
+# That's so fucking awesome!
+
 import wave         # read/write waveform audio (WAV)
 import pyaudio      # used to record the audio
 import asyncio      # used for concourent asynchronic code
